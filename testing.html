@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Try JavaScript</title>
+<script>
+/*
+function rot13(str) {
+
+ var newArray = [];
+
+ for (i = 0; i<str.length; i++) {
+
+   if (str.charCodeAt(i) < 65) {
+     var nonLetter = str.charCodeAt(i);
+     newArray.push(nonLetter);
+
+   } else if((str.charCodeAt(i) + 13) > 90) {
+       var newLetter = str.charCodeAt(i) - 13;
+       newArray.push(newLetter);
+
+   } else {
+       var codeLetter = str.charCodeAt(i) + 13;
+       newArray.push(codeLetter);
+   }
+
+ }
+rot13("SERR PBQR PNZC");
+
+
+
+ function backToCharacters() {
+   String.fromCharCode();
+ };
+backToCharacters.apply(null, myArray);
+
+
+
+
+// var arrToString = newArray.toString();
+// var finalString = arrToString.split(","); //outputs 70,82,69,69,32,67,79,68,69,32,67,65,77,80
+// return finalString;
+ //var finalCode = String.fromCharCode(finalString);
+ //return finalCode;
+
+}
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
+
+
+function bouncer(arr) {
+  var newArr = arr.filter(value => value != boolean(true));
+  console.log(newArr);
+}
+
+bouncer([7, "ate", "", false, 9, true]);
+
+
+var string = "1,2,3,4,5";
+var array = string.split(","); // string to array conversion
+function takesArray(a) { // taking an array as parameter
+    console.log(a);
+}
+takesArray(array); // passing array as argument
+*/
+
+/*
+function mutation(arr) {
+
+  var word = arr[0].toLowerCase();
+  var letterToFind = arr[1].toLowerCase();
+  var correctLetters = 0;
+  for (var i = 0; i < letterToFind.length; i++) {
+    correctLetters += word.indexOf(letterToFind[i]) != -1;
+  }
+  console.log(correctLetters === letterToFind.length);
+
+
+
+}
+
+mutation(["Hello", "Hey"]);
+
+
+function mutation(arr) {
+
+  var word = arr[0].toLowerCase();
+  var letterToFind = arr[1].toLowerCase();
+  var correctLetters = 0;
+  for (var i = 0; i < letterToFind.length; i++) {
+    correctLetters += word.indexOf(letterToFind[i]) != -1;
+   console.log(word.indexOf(letterToFind[i]));
+   console.log(correctLetters);
+
+  }
+  console.log(correctLetters === letterToFind.length);
+  console.log(0+ (word != letterToFind));
+  console.log(0 + Boolean(7 > 5));
+  console.log(0 + Boolean(7 < 5));
+console.log(Math.PI);
+
+
+}
+
+mutation(["Helloljkjsdf", "lloehg"]);
+
+
+
+
+function sumAll(arr) {
+
+  var leftValue = arr[0];
+  var rightValue =  arr[1];
+  var max = Math.max(leftValue, rightValue);
+  var min = Math.min(leftValue, rightValue);
+  var total = 0;
+
+  for(i=min; i<=max; i++) {
+    total += i;
+  }
+
+console.log(max, min, leftValue, rightValue);
+
+return total;
+
+}
+
+sumAll([12, 82]);
+
+function steamrollArray(arr) {
+ var steamrolled = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      var subArray = steamrollArray(arr[i]);
+      steamrolled = steamrolled.concat(subArray);
+      console.log("subarray " + subArray);
+      console.log("steamRolled " + steamrolled);
+      console.log('i is ' + i);
+      console.log(arr.length);
+    } else {
+      steamrolled.push(arr[i]);
+    }
+  }
+  return steamrolled;
+}
+
+steamrollArray([[1], [2], [3], [[4]]]);
+
+function mixedNumbers(arr) {
+  // change code below this line
+
+arr.push(7);
+arr.push('VIII');
+arr.push(9);
+arr.unShift('I',2,'three');
+  // change code above this line
+  return arr;
+}
+
+// do not change code below this line
+console.log(mixedNumbers(['IV', 5, 'six']));
+
+
+var myArr = [1,2,3,4,5,6,7];
+console.log(myArr.slice(1,3));
+
+let myString = "Big ass ol tiddy head";
+
+console.log(myString.replace(/\w+/gi, 'BOOTY'));
+//replaces any group of one or more word characters with the str BOOTY
+*/
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34];
+const squareList = (arr) => {
+  "use strict";
+  // change code below this line
+  const squaredIntegers = arr.filter((integer) => arr % 1 == 0);
+  // change code above this line
+  return squaredIntegers;
+};
+// test your code
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
